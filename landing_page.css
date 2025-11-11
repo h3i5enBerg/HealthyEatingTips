@@ -1,7 +1,8 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    background-color: #fbfbfa;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 p{
@@ -89,11 +90,15 @@ h1 p{
     height: 500px;
     width: auto;
 }
+
 .content-container{
-    display: flex;
-    height: 500px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
+
 .content-img{
     background-image: url("healthy_food.jpeg");
     border-radius: 50%;
@@ -101,7 +106,7 @@ h1 p{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;
-    width: 50%;
+    width: 100%;
     height: 500px;
 }
 
@@ -167,18 +172,27 @@ h1 p{
 ****************************************************************************************************************
 
 .why-container{
+    background-color: white;
     display: flex;
     flex-direction: row;  
 }
+#why-container{
+    background-color: white;
+}
 
 .why-title{
+    background-color: white;
     text-align: center;
     font-family: sans-serif;
     font-size: 24px;
     margin-bottom: 60px;
 }
+.why-title>h1{
+    background-color: white;
+}
 
 .why-content{
+    background-color: white;
     display: flex;
     justify-content: center;
     gap: 32px;
@@ -188,8 +202,12 @@ h1 p{
     height: 32px;
     width: 32px;
 }
+.why-content-img{
+    background-color: white;
+}
 
 .why-content-one, .why-content-two{
+    background-color: white;
     display: flex;
     height: 116px;
     width: 427px;
@@ -197,12 +215,14 @@ h1 p{
 }
 
 .why-content-head>h3{
+    background-color: white;
     margin:0px 0px 12px;
     font-family: sans-serif;
     font-size: 24px;
 }
 
 .why-content-para>p{
+    background-color: white;
     height: 72px;
     width: 368px;
     color: #666666;
@@ -213,7 +233,7 @@ h1 p{
 ******************************************************************************************************************************************************
 
 .tips-container{
-    background-color: #faf8f4;
+    background-color:#FBFBFA;
     max-width: 1200px;
     margin:60px;
     padding: 40px 20px;
@@ -244,6 +264,12 @@ h1 p{
     overflow: hidden;
     max-width: 370px;
     border: 1px solid #e9e4de;
+    cursor: pointer;
+    transition: transform 0.3s ease 0s
+}
+
+.tips-grid-item:hover{
+    transform: scale(1.1);
 }
 
 .tips-grid-item:hover {
@@ -287,6 +313,7 @@ h1 p{
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 60px;
+    font-family: sans-serif;
 }
 
 .recipes-title{
@@ -344,4 +371,38 @@ h1 p{
     border-radius: 10px;
     object-fit: cover;
     display: block;
+}
+
+
+******************************************************************************************************************************************************
+
+
+footer{
+    width: 100%;
+}
+
+.foot-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.content-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.content-item{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
